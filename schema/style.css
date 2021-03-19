@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug{
+  background-color: blue;
+  height: 50px;
+  
+}
+.d-inline{
+  display: inline-block;
+}
+
+/* ------------------------ */
+header{
+  height: 70px;
+  background-color: red;
+}
