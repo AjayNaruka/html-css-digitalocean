@@ -69,6 +69,44 @@ img{
   margin-bottom: 30px ;
 }
 
+/* BLOCCO SLIDE */
+.blocco-slide{
+  position: relative;
+  width: 60%;
+  margin: 80px auto;
+  /* background-color: red; */
+  margin-bottom: 30px;
+}
+.blocco-slide .slide-image{
+  width: 85%;
+  margin: 0 auto;
+  background-color: blue;
+}
+.blocco-slide .slide-image img{
+  width: 100%;
+}
+/* .left-arrow{
+position: absolute;
+transform: translateY(-50%);
+left: 0;
+top: 50%;
+
+} */
+.arrow{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 50px;
+}
+.left.arrow{
+  left: 0;
+  color: #6F7B97;
+}
+.right.arrow{
+  right: 23px;
+  color: #031C4E;
+}
+
 
 /* ------------------------ */
 
@@ -193,7 +231,8 @@ form input{
 
   #scaling ul{
     list-style: none;
-    border-left: 2px solid lightgray
+    border-left: 2px solid lightgray;
+    margin-left: 50px;
    }
   #scaling ul li h4{
     line-height: 40px;
@@ -203,3 +242,31 @@ form input{
 
 /* /SCALING */
 
+/* DESIGNED */
+
+#designed h5{
+  font-size: 16px;
+  color: #021D4C;
+  font-weight: bold;
+}
+
+.slide-selector{
+  height: 18px;
+  width: 100%;
+  /* background-color: red; */
+}
+.slide-selector .slides{
+  display: inline-block;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border:1px solid #217DFF
+}
+.slide-selector .slides:hover{
+  background-color: #217DFF;
+}
+.slides.selected{
+  background-color: #217DFF;
+}
+/* /DESIGNED */
