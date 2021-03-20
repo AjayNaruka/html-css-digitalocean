@@ -41,15 +41,34 @@ img{
 .blue-text{
   color:#217DFF;
 }
-.sec-description{
-  color:#6F7B97;
-  font-weight: bolder;
-  margin-top: 20px;
-}
+
 .arrow-link a{
   font-size: 17px;
   color:#217DFF;
 }
+.sec-title h2{
+  color: #031C4E;
+  font-weight:bolder;
+}
+.sec-description{
+  color:#6F7B97;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.level-box-3 .col-icon img{
+  height: 40px;
+  width: 40px;
+  margin-right: auto;
+}
+.level-box-3 .col-title h5{
+  margin: 15px 0px;
+  font-weight: bolder;
+}
+.level-box-3 .col-description{
+  margin-bottom: 30px ;
+}
+
 
 /* ------------------------ */
 
@@ -169,3 +188,18 @@ form input{
   }
 
 /* /BUSINESSES */
+
+/* SCALING */
+
+  #scaling ul{
+    list-style: none;
+    border-left: 2px solid lightgray
+   }
+  #scaling ul li h4{
+    line-height: 40px;
+    padding-left: 10px;
+  }
+ 
+
+/* /SCALING */
+
