@@ -41,13 +41,22 @@ img{
 .blue-text{
   color:#217DFF;
 }
+.sec-description{
+  color:#6F7B97;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.arrow-link a{
+  font-size: 17px;
+  color:#217DFF;
+}
 
 /* ------------------------ */
 
 /* HEADER */
 
 header{
-  height: 70px;
+  height: 60px;
   /* background-color: red; */
 }
 .asn-navbar .container .row{
@@ -75,10 +84,11 @@ header ul li:last-child{
 
 /* MAIN */
 
-main section{
-  margin-top:10px;
-  /* height: 200px; */
-  background-color: green;
+main section.bg-gray{
+  background-color: #F3F5F9;
+}
+main section.bg-white{
+  background-color: white;
 }
 
 
@@ -88,6 +98,10 @@ main section{
   background-size: cover;
   height: fit-content;
   color: white;
+}
+/* REMOVE JUMBO DEFAULT MARGIN */
+.jumbotron.no-bottom{
+  margin-bottom: 0;
 }
 #banner h2{
   font-size: 60px;
@@ -130,3 +144,28 @@ form input{
 #banner .small-p a{
   text-decoration: underline;
 }
+
+/* BUSINESSES */
+#businesses .row.businesses-img{
+  
+}
+/* #businesses .row.businesses-img img{
+    /* width: 100%; */
+   /*  top: 50%;
+    transform:translate(0,-50%);
+    max-height:86px
+  }  */ 
+  #businesses .row.businesses-img img{
+    /* position: absolute; */
+    max-height: 125px;
+    top: 50%;
+  }
+  /* PER EVITARE SOVRAPPONIMEN */ 
+  @media all and (min-width:992px){
+    #businesses .row.businesses-img img{
+      width: 100%;
+      /* max-height: none; */
+    }
+  }
+
+/* /BUSINESSES */
