@@ -8,6 +8,15 @@
   /* height: 50px; */
   
 }
+main section.bg-gray{
+  background-color: #F3F5F9;
+}
+main section.bg-white{
+  background-color: white;
+}
+main section.blue-gradient{
+  background-image: linear-gradient(#0048C6,#001D99)
+}
 .height-100{
   height: 100%;
 }
@@ -23,7 +32,9 @@
 .mrg-bottom{
   margin-bottom: 5px;
 }
-
+.mrg-bottom-30{
+  margin-bottom: 30px;
+}
 img{
   width: 175px;
 }
@@ -41,10 +52,16 @@ img{
 .blue-text{
   color:#217DFF;
 }
+.white-text{
+  color: white;
+}
 
 .arrow-link a{
   font-size: 17px;
   color:#217DFF;
+}
+.arrow-link a h5{
+  font-weight: bolder;
 }
 .sec-title h2{
   color: #031C4E;
@@ -61,7 +78,7 @@ img{
   width: 40px;
   margin-right: auto;
 }
-.level-box-3 .col-title h5{
+.level-box-3 .col-title h4{
   margin: 15px 0px;
   font-weight: bolder;
 }
@@ -141,12 +158,7 @@ header ul li:last-child{
 
 /* MAIN */
 
-main section.bg-gray{
-  background-color: #F3F5F9;
-}
-main section.bg-white{
-  background-color: white;
-}
+
 
 
 
