@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+.clearfix::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+.f-left{
+  float: left;
+}
 .debug{
   background-color: blue;
   /* height: 50px; */
@@ -28,6 +36,9 @@ main section.blue-gradient{
 }
 .box-padding-30{
   padding: 30px 0;
+}
+.box-padding-10px{
+  padding: 10px 0;
 }
 .mrg-bottom{
   margin-bottom: 5px;
@@ -55,12 +66,16 @@ img{
 .white-text{
   color: white;
 }
+.sec-title.white-text h2{
+  color: white;
+}
 
 .arrow-link a{
   font-size: 17px;
   color:#217DFF;
 }
-.arrow-link a h5{
+h5{
+  font-size: 15px;
   font-weight: bolder;
 }
 .sec-title h2{
@@ -282,3 +297,32 @@ form input{
   background-color: #217DFF;
 }
 /* /DESIGNED */
+
+/* REGIONS */
+  
+  .country-details{
+    border-bottom: 1px solid white;
+  }
+  .country-details:last-child{
+    border-bottom: none;
+  }
+  .country-code{
+    width: 20%;
+    padding-left: 15px;
+    /* background-color: red; */
+  }
+  .country-speed{
+    width: 20%;
+    color: #00B4CC;
+    /* background-color: red; */
+  }
+  .country-speed a{
+    color: #00b4cc;
+  }
+  .country-name{
+    width: 60%;
+    color: #9EB2E1;
+    /* background-color: green; */
+  }
+/* /REGIONS */
+
