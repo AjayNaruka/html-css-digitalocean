@@ -49,6 +49,9 @@ main section.blue-gradient{
 img{
   width: 175px;
 }
+ul li a:hover{
+  text-decoration: none;
+}
 
 .btn.bg-blue{
   background-color:#579AFF;
@@ -141,14 +144,40 @@ top: 50%;
   right: 23px;
   color: #031C4E;
 }
+.slide-selector{
+  height: 18px;
+  width: 100%;
+  /* background-color: red; */
+}
+.slide-selector .slides{
+  display: inline-block;
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border:1px solid #217DFF
+}
+.slide-selector .slides:hover{
+  background-color: #217DFF;
+  cursor: pointer;
+}
+.slides.selected{
+  background-color: #217DFF;
+}
 
 
 /* ------------------------ */
 
 /* HEADER */
 
-header{
+header {
   height: 60px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  font-size: 16px;
   /* background-color: red; */
 }
 .asn-navbar .container .row{
@@ -164,6 +193,9 @@ header ul{
 header ul li{
   margin-right: 10px;
 }
+header ul li a{
+  color:black;
+}
 header ul li:last-child{
   margin-right: 0;
 }
@@ -176,10 +208,9 @@ header ul li:last-child{
 
 /* MAIN */
 
-
-
-
-
+main{
+  margin-top: 65px;
+}
 .main-banner-bg{
   background-image: url(../img/bg-banner-home.jpg);
   background-size: cover;
@@ -233,33 +264,37 @@ form input{
 }
 
 /* BUSINESSES */
-#businesses .row.businesses-img{
-  
-}
-/* #businesses .row.businesses-img img{
-    /* width: 100%; */
-   /*  top: 50%;
-    transform:translate(0,-50%);
-    max-height:86px
-  }  */ 
-  #businesses .row.businesses-img img{
-    /* position: absolute; */
-    max-height: 125px;
-    top: 50%;
-  }
-  /* PER EVITARE SOVRAPPONIMEN */ 
-  @media all and (min-width:992px){
-    #businesses .row.businesses-img img{
-      width: 100%;
-      /* max-height: none; */
+ #businesses img{
+  width: 100%;
+  max-height: 110px;
+ }
+ 
+   #businesses .row.businesses-img{
+     width: 100%;
+     margin: 20px;
+   }
+   #businesses .row.businesses-img [class*="col-"]{
+     max-height: 60px;
+   }
+   .row.businesses-img img{
+     height: 100%;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+   @media all and (max-width:991px){
+    
+    #businesses .row.businesses-img [class*="col-"]{
+      max-height: none;
     }
-  }
+
+   }
+ 
 
 /* /BUSINESSES */
 
 /* SCALING */
 
-  #scaling ul,{
+  #scaling ul{
     list-style: none;
     border-left: 2px solid lightgray;
     margin-left: 50px;
@@ -280,25 +315,7 @@ form input{
   font-weight: bold;
 }
 
-.slide-selector{
-  height: 18px;
-  width: 100%;
-  /* background-color: red; */
-}
-.slide-selector .slides{
-  display: inline-block;
-  background-color: white;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  border:1px solid #217DFF
-}
-.slide-selector .slides:hover{
-  background-color: #217DFF;
-}
-.slides.selected{
-  background-color: #217DFF;
-}
+
 /* /DESIGNED */
 
 /* REGIONS */
@@ -329,6 +346,13 @@ form input{
   }
 /* /REGIONS */
 
+/* STARTED */
+#started h5{
+  padding: 5px;
+  margin: 0;
+}
+/* /STARTED */
+/* FOOTER */
 footer{
   background-color:#031C4E ;
 }
@@ -339,7 +363,7 @@ footer i{
   font-size: 20px;
   margin-right: 10px;
 }
-footer ul{
+ul{
   list-style: none;
 }
 footer ul li a{
@@ -347,4 +371,77 @@ footer ul li a{
   color:inherit;
   line-height:20px;
 }
-
+/* /FOOTER */
+.chat-bot{
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  float: right;
+  margin-right: 50px;
+}
+.chat-bot:hover .chat-message{
+  visibility: visible;
+}
+.chat-bot .bot-icon{
+  position: relative;
+  width:70px ;
+  height: 70px;
+  background-color: #006AFF;
+  border-radius: 5px;
+}
+.chat-bot .bot-icon img{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.chat-bot .bot-notifications{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.chat-message{
+  visibility: hidden;
+  position: relative;
+  background-color: white;
+  max-width: 450px;
+  top: -30px;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.chat-message::after{
+  position: absolute;
+  z-index: 1000;
+  width: 20px;
+  height: 20px;
+  top: calc(100% - 20px);
+  left: 100%;
+  margin-left: -10px;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: -10px;
+  background-color: white;
+}
+.chat-bot p{
+  font-size: 16px;
+}
+@media all and (max-width: 991px){
+  .chat-bot{
+    left: 50px;
+    bottom: 25px;
+  }
+  .chat-message{
+    display: block;
+  }
+  .chat-message::after{
+    top: 100%;
+    left: 25px;
+  }
+}
