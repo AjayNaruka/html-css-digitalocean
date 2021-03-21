@@ -69,6 +69,9 @@ img{
 .sec-title.white-text h2{
   color: white;
 }
+.gray-text{
+  color: #7A859D;
+}
 
 .arrow-link a{
   font-size: 17px;
@@ -256,7 +259,7 @@ form input{
 
 /* SCALING */
 
-  #scaling ul{
+  #scaling ul,{
     list-style: none;
     border-left: 2px solid lightgray;
     margin-left: 50px;
@@ -325,4 +328,23 @@ form input{
     /* background-color: green; */
   }
 /* /REGIONS */
+
+footer{
+  background-color:#031C4E ;
+}
+footer img{
+  width: 50px;
+}
+footer i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li a{
+  text-decoration: none;
+  color:inherit;
+  line-height:20px;
+}
 
