@@ -81,7 +81,7 @@ ul li a:hover {
   color: #7a859d;
 }
 
-.arrow-link a {
+.arrow-link a h4 {
   font-size: 16px;
   color: #217dff;
   font-weight: 500;
@@ -91,6 +91,7 @@ h5 {
   font-weight: bolder;
 }
 .sec-title h2 {
+  font-size: 35px;
   color: #031c4e;
   font-weight: bolder;
 }
@@ -100,6 +101,11 @@ h5 {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+.sec-description.bigger {
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .level-box-3 .col-icon img {
   height: 40px;
   width: 40px;
@@ -107,10 +113,10 @@ h5 {
 }
 .level-box-3 .col-title h4 {
   margin: 15px 0px;
+  font-size: 19px;
   font-weight: 700;
 }
 .level-box-3 .col-description {
-  margin-bottom: 20px;
   font-weight: 500;
   color: #66728E;
   font-size: 16px;
@@ -237,6 +243,9 @@ main {
 .jumbotron.no-bottom {
   margin-bottom: 0;
 }
+.jumbotron p{
+  font-weight: 500;
+}
 #banner h2 {
   font-size: 60px;
   font-weight: 600;
@@ -264,6 +273,8 @@ form input {
   padding-left: 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .google-icon img {
   width: 20px;
@@ -273,6 +284,7 @@ form input {
 #banner .small-p {
   font-size: 12px;
   margin-top: 10px;
+  font-weight: 500;
 }
 #banner .small-p a {
   text-decoration: underline;
@@ -310,8 +322,10 @@ form input {
   margin-left: 50px;
 }
 #scaling ul li h4 {
+  font-size: 20px;
   line-height: 40px;
   padding-left: 10px;
+  font-weight: 400;
 }
 
 /*PER ALLINEARE IN MODALITA' MOBILE CON IL CONTENUTO SOTTO */
@@ -328,7 +342,7 @@ form input {
 #designed h5 {
   font-size: 16px;
   color: #021d4c;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* /DESIGNED */
@@ -358,7 +372,8 @@ form input {
 .country-name {
   width: 60%;
   color: #9eb2e1;
-  font-size: 13px
+  font-size: 12px;
+  font-weight: 500;
   /* background-color: green; */
 }
 /* /REGIONS */
@@ -408,8 +423,16 @@ ul {
 }
 footer ul li a {
   text-decoration: none;
-  color: inherit;
+  color: #A6ADBD;
   line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .p-copy{
+  font-size: 16px;
+}
+footer .f-w-500.dark-grey-text{
+  color: #4D5C7E;
 }
 /* /FOOTER */
 .chat-bot {
@@ -459,7 +482,6 @@ footer ul li a {
 }
 .chat-message::after {
   position: absolute;
-  z-index: 1000;
   width: 20px;
   height: 20px;
   top: calc(100% - 20px);
@@ -469,6 +491,8 @@ footer ul li a {
   transform: rotate(45deg);
   margin-top: -10px;
   background-color: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .chat-bot p {
   font-size: 16px;
@@ -484,10 +508,21 @@ footer ul li a {
   .chat-message::after {
     top: 100%;
     left: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: none;
   }
 }
 
-/* ---------------- */
+/* ---FONTS--- */
 .asn-navbar a{
   font-weight: 500;
+}
+.f-w-400{
+  font-weight: 400;
+}
+.f-w-500{
+  font-weight: 500;
+}
+.f-w-700{
+  font-weight: 700;
 }
